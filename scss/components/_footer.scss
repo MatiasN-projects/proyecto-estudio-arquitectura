@@ -1,0 +1,60 @@
+// Variables
+$color-fondo-footer: #5c735c;
+$color-texto-footer: #ffffff;
+$tamano-iconos: 50px;
+$espacio-iconos: 30px;
+$padding-footer: 30px;
+
+// Estilos para el footer
+footer {
+    background-color: $color-fondo-footer;
+    color: $color-texto-footer;
+    padding: $padding-footer;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        a {
+            margin: 0 10px;
+
+            img {
+                width: $tamano-iconos;
+                height: $tamano-iconos;
+                margin-inline: $espacio-iconos;
+            }
+        }
+    }
+
+    .contact-details {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 15px;
+
+        li {
+            margin-inline: 5px;
+
+            a {
+                color: $color-texto-footer;
+                text-decoration: none;
+            }
+        }
+    }
+}
