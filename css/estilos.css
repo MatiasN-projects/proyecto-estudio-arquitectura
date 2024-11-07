@@ -626,166 +626,192 @@ header nav {
     width: 100px; } }
 
 main {
-  background-color: rgba(173, 165, 155, 0.724); }
-  main .hero {
-    position: relative; }
-    main .hero .carousel-inner {
-      max-height: 600px;
-      overflow: hidden; }
-      main .hero .carousel-inner .carousel-item img {
-        width: 100%;
-        height: auto;
-        max-height: 50%;
-        object-fit: contain; }
-  main .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-    margin: 20px; }
-    main .grid-container .intro {
-      grid-column: 1;
-      width: 100vh;
-      margin-top: 20px;
-      padding: 20px;
-      text-align: left; }
-      main .grid-container .intro p {
-        text-align: justify;
-        margin: 0;
-        font-family: Roboto, sans-serif;
-        font-size: 20px;
-        line-height: 1.5;
-        white-space: normal;
-        hyphens: auto;
-        width: 120%; }
-    main .grid-container .tarjeta {
-      grid-column: 2;
-      height: 200px;
-      border-radius: 25px;
-      margin-left: 150px;
-      box-shadow: 0px 0px 33px -4px rgba(0, 0, 0, 0.5); }
-      main .grid-container .tarjeta .tarjeta-cuerpo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 350px;
-        height: 200px;
-        background-color: rgba(92, 115, 92, 0.15);
-        box-shadow: 0px 0px 33px -4px rgba(0, 0, 0, 0.5); }
-        main .grid-container .tarjeta .tarjeta-cuerpo .tarjeta-titulo {
-          font-family: Roboto, sans-serif;
-          font-size: 40px;
-          color: black;
-          padding: 20px;
-          text-align: center;
-          white-space: pre; }
-  main .proyectos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    margin-left: 10px;
-    padding: 10px; }
-    main .proyectos .titulo-parrafo {
-      color: #5c735c;
-      font-weight: bold;
-      font-size: 15px;
+  background-image: url("../img/fondo-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.hero {
+  position: relative; }
+  .hero .carousel-inner {
+    max-height: 600px;
+    overflow: hidden; }
+    .hero .carousel-inner .carousel-item img {
+      width: 100%;
+      height: auto;
+      max-height: 50%;
+      object-fit: contain; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 20px; }
+  .grid-container .intro {
+    grid-column: 1;
+    width: 100vh;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px; }
+    .grid-container .intro p {
+      text-align: justify;
+      margin: 0;
+      font-family: Roboto, sans-serif;
+      line-height: 1.5;
+      font-size: 20px;
+      width: 120%;
+      color: #ffffff;
+      background-color: rgba(83, 83, 83, 0.772);
+      border: 1px solid rgba(83, 83, 83, 0.772);
+      border-radius: 10px;
+      padding: 5px; }
+  .grid-container .tarjeta {
+    grid-column: 2;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 150px; }
+    .grid-container .tarjeta .tarjeta-cuerpo {
       display: flex;
-      flex-direction: column;
-      padding: 20px;
-      text-align: center; }
-    main .proyectos .proyecto-galeria {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 5px; }
-      main .proyectos .proyecto-galeria .proyecto-item {
-        width: 250px;
-        height: 230px;
-        border: 1px solid #ffffff;
-        overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 200px;
+      background-color: #ffffffc2;
+      box-shadow: 0px 0px 33px -4px #000000; }
+      .grid-container .tarjeta .tarjeta-cuerpo .tarjeta-titulo {
+        font-family: Roboto, sans-serif;
+        font-size: 40px;
+        color: black;
+        padding: 20px;
         text-align: center;
-        position: relative; }
-        main .proyectos .proyecto-galeria .proyecto-item:nth-child(3) {
-          grid-row: span 2;
-          height: 465px; }
-        main .proyectos .proyecto-galeria .proyecto-item img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-        main .proyectos .proyecto-galeria .proyecto-item h3 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          color: rgba(255, 255, 255, 0.7);
-          background-color: rgba(0, 0, 0, 0.5);
-          padding: 10px;
-          border-radius: 5px;
-          font-size: 18px;
-          font-weight: bold;
-          width: 90%; }
+        white-space: pre; }
 
-@media (max-width: 991px) {
-  main .grid-container {
-    grid-template-columns: 1fr;
-    text-align: center; }
-    main .grid-container .tarjeta {
-      margin-left: 0; }
-  main .proyectos {
-    flex-direction: column;
-    align-items: center; }
-  main .proyecto-galeria {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (max-width: 576px) {
-  main .hero .carousel-inner {
-    max-height: 400px; }
-  main .grid-container .intro p {
-    font-size: 18px;
-    width: 100%; }
-  main .proyecto-galeria {
-    grid-template-columns: 1fr; } }
-
-main {
+.proyectos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  margin-left: 10px;
   padding: 10px; }
-  main .nuestros-servicios h2 {
-    text-align: center;
-    color: #5c735c; }
-  main .nuestros-servicios p {
-    display: flex;
+  .proyectos .titulo-parrafo {
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: start;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
     margin: 10px;
-    font-size: 1.2rem;
-    color: #333; }
-  main .servicios {
-    padding: 10px; }
-    main .servicios .container .row {
-      margin-bottom: 20px; }
-      main .servicios .container .row .col-md-6 .card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px; }
-        main .servicios .container .row .col-md-6 .card .card-body {
-          position: relative;
-          padding: 10px; }
-          main .servicios .container .row .col-md-6 .card .card-body .card-title {
-            font-size: 1.5rem;
-            color: #5c735c;
-            margin-bottom: 15px; }
-          main .servicios .container .row .col-md-6 .card .card-body .card-text {
-            color: #333;
-            font-size: 1rem;
-            padding: 10px; }
-          main .servicios .container .row .col-md-6 .card .card-body .imagen-superior-derecha {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 50px;
-            height: 50px;
-            object-fit: cover; }
+    padding: 20px; }
+  .proyectos a {
+    text-decoration: none; }
+  .proyectos p {
+    text-align: justify;
+    font-size: 110%;
+    margin-right: 300px;
+    margin-top: 80px;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    padding: 8px; }
+
+.proyecto-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; }
+  .proyecto-galeria .proyecto-item {
+    position: relative;
+    width: 250px;
+    height: 230px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    text-align: center; }
+    .proyecto-galeria .proyecto-item:nth-child(3) {
+      grid-row: span 2;
+      object-fit: cover;
+      height: 465px; }
+    .proyecto-galeria .proyecto-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .proyecto-galeria .proyecto-item h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(0, 0, 0, 0.505);
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 90%; }
+
+.proyects,
+.contacto-doc,
+.services {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px; }
+
+.proyects {
+  background-image: url("../img/fondo-5.jpg"); }
+
+.contacto-doc {
+  background-image: url("../img/trato.jpg"); }
+
+.services {
+  background-image: url("../img/fondo-6.jpg"); }
+
+.sobre-mi h2,
+.filosofia h2,
+.nuestros-servicios h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff; }
+
+.sobre-mi p,
+.filosofia p,
+.nuestros-servicios p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 70px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(83, 83, 83, 0.676);
+  border: 1px solid rgba(83, 83, 83, 0.676);
+  border-radius: 10px;
+  padding: 5px; }
+
+.info-adicional {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 200px; }
+  .info-adicional h2 {
+    font-size: 50px;
+    margin: 50px; }
+
+.detalle-contacto li {
+  list-style: none; }
+
+.detalle-contacto a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 10px; }
+  .detalle-contacto a:hover {
+    text-decoration: underline; }
 
 footer {
   background-color: #5c735c;

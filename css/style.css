@@ -7,7 +7,7 @@
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-x: hidden; 
 }
 
 a{
@@ -42,7 +42,10 @@ header nav img{
 
 /*!-----MAIN-----*/
 main {
-    background-color: rgba(173, 165, 155, 0.724);
+    background-image: url('../img/fondo-1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
 }
 
 .hero {
@@ -77,7 +80,12 @@ main {
     hyphens: auto;
     line-height: 1.5;
     font-size: 20px;
-    width: 120%;
+    width: 120%; 
+    color:#ffffff;
+    background-color:rgba(83, 83, 83, 0.772);
+    border: 1px solid rgba(83, 83, 83, 0.772);
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .grid-container {
@@ -105,7 +113,7 @@ main {
     align-items: center;
     width: 350px;    
     height: 200px;      
-    background-color: #5c735c25;      
+    background-color: #ffffffc2;      
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -139,14 +147,14 @@ main {
 }
 
 .titulo-parrafo {
-    color: #5c735c;
+    justify-content: center;
+    text-align: start;
+    color: #ffffff;
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block; 
+    margin: 10px; 
     padding: 20px;
-    margin-top: 0px;
-    text-align: center;
 }
 
 .proyectos a{
@@ -217,16 +225,162 @@ main {
     position: relative; 
 }
 
-.col-md-2 h3{
-    font-size: 20px;
+.proyects {
+    background-image: url('../img/fondo-5.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px; 
 }
+
+.doc-proyectos h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.doc-proyectos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 20px;
+    color:#ffffff;
+    background-color:rgba(83, 83, 83, 0.523);
+    border: 1px solid rgba(83, 83, 83, 0.523);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.quien-soy-main {
+    background-image: url('../img/pexels-tima-miroshnichenko-5717271.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px; 
+}
+
+
+
+.sobre-mi h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.sobre-mi p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: justify;
+    margin: 70px;
+    font-weight: bold;
+    color:#ffffff;
+    background-color:rgba(83, 83, 83, 0.676);
+    border: 1px solid rgba(83, 83, 83, 0.676);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.filosofia h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.filosofia p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    padding: 20px;
+    margin: 70px;
+    font-weight: bold;
+    color:#ffffff;
+    background-color:rgba(83, 83, 83, 0.676);
+    border: 1px solid rgba(83, 83, 83, 0.676);
+    border-radius: 10px;
+    padding: 5px;
+}
+
 
 .col-md-2{
-    margin: 10px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.sobre-nosotros{
-    margin-right: 10px;
+.nombre, .titulo {
+    color: #ffffff;
+    background-color: #0000008a; 
+    display: inline-block; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin: 5px;
+}
+
+.col-md-2 img{
+    max-width: 300px; 
+    height: auto; 
+}
+
+.foto{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 90vh;   
+    padding: 20px;
+}
+
+.proyectos-tarjetas{
+    position: relative; 
+    padding: 50px; 
+}
+
+.proyectos-tarjetas .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.proyectos-tarjetas .card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+
+.proyectos-tarjetas .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.proyectos-tarjetas .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyectos-tarjetas .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .nuestros-servicios h2{
@@ -234,39 +388,115 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    text-decoration: underline;
+    text-decoration:none;
+    font-weight: bold;
 }
 
 .nuestros-servicios p{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 10px;
+    text-align: justify;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:#ffffff;
+    background-color:rgba(83, 83, 83, 0.676);
+    border: 1px solid rgba(83, 83, 83, 0.676);
+    border-radius: 10px;
+    padding: 5px;
 }
+
+.services{
+    background-image: url('../img/fondo-6.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px; 
+}
+
 
 .servicios{
     padding: 10px;
 }
 
 .servicio-diseño {
-    position: relative; /* Esto es necesario para que el posicionamiento absoluto de la imagen funcione dentro del contenedor */
-    padding: 20px; /* Puedes ajustar el padding según lo necesites */
-    border: 1px solid #ddd; /* Opcional, para darle un borde a la tarjeta */
+    position: relative; 
+    padding: 50px; 
+    border: 1px solid #ddd; 
 }
 
 .imagen-superior-derecha {
-    position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    right: 10px; /* Ajusta la distancia desde el lado derecho */
-    width: 50px; /* Ancho de la imagen */
-    height: 50px; /* Alto de la imagen */
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover;  
+}
+
+.card-body{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.49);
+    background-color:rgba(255, 255, 255, 0.6);
 }
 
 .card-text{
-    padding: 10px;
+    padding: 20px;
 }
+
+.contacto-doc{
+    background-image: url('../img/trato.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px; 
+    display: block;
+}
+
+.contacto h2{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.info-adicional{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 200px;
+}
+
+.info-adicional h2{
+    font-size: 50px;
+    margin: 50px;
+}
+
+.detalle-contacto li{
+    list-style: none;
+}
+
+.detalle-contacto a {
+    display: inline-block;
+    color: white; 
+    text-decoration: none; 
+    margin: 10px;
+}
+
+.detalle-contacto a:hover {
+    text-decoration: underline;
+}
+
 
 
 /*!-----FOOTER-----*/
@@ -328,16 +558,16 @@ footer p {
 /*!-----MEDIA QUERIES-----*/
 
 @media (max-width: 1024px) {
-    /* Pantallas medianas, como tablets */
+    
 
-    /* Ajustes de la barra de navegación */
+    
     .navbar-nav {
         margin-left: auto;
         padding-top: 10px;
         justify-content: space-around;
     }
 
-    /* Carrusel */
+    
     .hero {
         max-height: 400px;
     }
@@ -345,7 +575,7 @@ footer p {
         max-height: 400px;
     }
 
-    /* .intro y ajustes de texto */
+    
     .intro {
         width: 100%;
         padding: 15px;
@@ -358,7 +588,7 @@ footer p {
         width: 100%;
     }
 
-    /* Grilla de proyectos en columna */
+    
     .grid-container {
         grid-template-columns: 1fr;
         margin-left: 0;
@@ -369,13 +599,13 @@ footer p {
         width: 100%;
     }
 
-    /* .proyectos */
+    
     .proyectos {
         flex-direction: column;
         margin-left: 0;
     }
 
-    /* Galería de proyectos */
+    
     .proyecto-galeria {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -390,7 +620,7 @@ footer p {
         height: auto;
     }
 
-    /* Footer */
+    
     footer {
         text-align: center;
         padding: 20px;
@@ -408,20 +638,18 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    /* Pantallas pequeñas, como móviles */
-
-    /* Ajustes del header y navbar */
+    
     .navbar-nav {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Ajustes del carrusel */
+    
     .carousel-inner {
         max-height: 300px;
     }
 
-    /* Ajuste de la intro */
+    
     .intro {
         width: 100%;
         font-size: 16px;
@@ -440,7 +668,7 @@ footer p {
         margin-right: 20px;
     }
 
-    /* Reorganizar tarjetas y proyectos */
+    
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -467,7 +695,7 @@ footer p {
         width: 100%;
     }
 
-    /* Footer */
+    
     footer {
         padding: 10px;
     }
@@ -487,13 +715,13 @@ footer p {
 }
 
 @media (min-width: 1440px) {
-    /* Pantallas grandes, como monitores anchos */
+    
 
     .navbar-nav {
         padding-top: 20px;
     }
 
-    /* Ajustes para carrusel */
+    
     .hero {
         max-height: 700px;
     }
@@ -502,21 +730,21 @@ footer p {
         max-height: 700px;
     }
 
-    /* Ajustes de .intro */
+    
     .intro {
-        width: 70vw; /* Se ajusta para pantallas grandes */
+        width: 70vw; 
         font-size: 22px;
         padding: 40px;
     }
 
-    /* Ajustes de proyectos */
+    
     .grid-container {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         margin: 40px;
     }
 
-    /* Footer */
+    
     footer {
         padding: 40px;
     }
